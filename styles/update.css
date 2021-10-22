@@ -1,0 +1,451 @@
+/*********************************
+8. Footer
+*********************************/
+
+.footer {
+  width: 100%;
+}
+.footer_container {
+  width: 100%;
+  height: auto;
+  background: #434750;
+  padding-bottom: 77px;
+  line-height: 1.2em;
+  
+}
+.footer_logo_container {
+  width: 100%;
+  height: 147px;
+  background: #ffffff;
+}
+.footer_logo_container::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #4dae47;
+  content: "";
+}
+.footer_logo_container a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.footer_logo_container .logo_content {
+  display: inline-block;
+  padding-left: 0;
+  width: auto;
+  height: auto;
+}
+.footer_logo_container .logo {
+  margin-top: 10px;
+}
+.footer_about_text {
+  margin-top: 36px;
+}
+.footer_about_logo {
+  margin-top: 10px;
+}
+.footer_about_text p {
+  color: #ffffff;
+}
+.footer_about_list {
+  margin-top: 32px;
+}
+.footer_about_list li:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer_about_icon {
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  /*background: #4dae47;*/
+  text-align: center;
+  vertical-align: middle;
+}
+
+.footer_about_icon .fa {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  color: #4dae47;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.footer_about_list li span {
+  font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+    padding-left: 1px;
+}
+.footer_column {
+  padding-top: 36px;
+  
+  align-items: center;
+}
+.footer_title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.footer_title::after {
+  display: block;
+  position: absolute;
+  left: 10%;
+  bottom: -0.7em; 
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 54px;
+  height: 2px;
+  background: #4baf48;
+  content: "";
+}
+.footer_links ul {
+  /*-webkit-columns: 2;*/
+  /*-moz-columns: 2;*/
+  /*columns: 2;*/
+  margin-top: 35px;
+}
+.footer_links ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.footer_links ul li a {
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.footer_news ul {
+  margin-top: 35px;
+}
+.footer_news_title a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.footer_news_date {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4dae47;
+  margin-top: 7px;
+}
+.footer_news ul li:not(:last-child) {
+  margin-bottom: 38px;
+}
+.copyright {
+  width: 100%;
+  background: #EAF2D7;
+}
+.copyright_content {
+  width: 100%;
+  height: 4.4em;
+}
+.cr {
+ 
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+
+.cr span{
+  color: #4dae47;
+}
+.cr span:hover{
+  color:#88e483;
+}
+
+.footer_social ul {
+  margin-right: -5px;
+}
+.footer_social ul li {
+  display: inline-block;
+}
+.footer_social ul li:not(:last-child) {
+  margin-right: 19px;
+}
+.footer_social ul li a i {
+  color: #4dae47;
+  padding: 5px;
+  font-size: 14px;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.footer_social ul li a i:hover {
+  color:#88e483;
+}
+
+
+/* ----- Variables ----- */
+/* $color-primary: #4c4c4c;
+$color-secondary: #a6a6a6;
+$color-highlight: #ff3f40; */
+
+/* ----- Global ----- */
+
+h3 {
+  font-size: 0.7em;
+  letter-spacing: 1.2px;
+  color: #a6a6a6;
+}
+
+.photo-main img {
+  max-width: 100%;
+  margin-left: 90px;
+  filter: drop-shadow(1px 1px 3px );
+}
+@media only screen and (max-width: 991px) and (min-width: 767px){
+  .footer .row{
+    font-size: 12px;
+    
+  }
+
+  .footer .row .fa{
+    font-size: 16px;
+  }
+  .footer_about_logo{
+    margin-left: 0em!important;
+  }
+  .footer_title::after{
+    left: 1.4em;
+    bottom: -0.7em;
+    width: 50px;
+  }
+  .footer_about_list li span {
+    font-size: 14px;
+    padding-left: 1px;
+  }
+  element.style {
+    height: 50px;
+    width: 160px;
+}
+}
+
+@media (max-width: 700px) {
+  .photo-main img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px)
+{
+  .footer_title::after{
+      left: 1.4em;
+      bottom: -0.7em;
+      width: 48px;
+  
+  }
+}
+
+/* ----- Product Section ----- */
+.product {
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  margin: auto;
+  padding: 2.5em 0;
+  min-width: 600px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* ----- Photo Section ----- */
+.product__photo {
+  position: relative;
+}
+
+.photo-container {
+  position: absolute;
+  left: -2.5em;
+  display: grid;
+  grid-template-rows: 1fr;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 4px 4px 25px -2px rgba(0, 0, 0, 0.3);
+}
+
+.photo-main .controls {
+  display: flex;
+  justify-content: center;
+  padding: 0.8em;
+  color: #fff;
+}
+.photo-main i {
+  cursor: pointer;
+}
+.photo-main   img {
+  /*position: absolute;*/
+  margin-left: 30px;
+  /*left: 1.5em;*/
+  top: 2em;
+  /*max-width: 110%;*/
+  filter: saturate(150%) contrast(120%) hue-rotate(10deg)
+    drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
+}
+
+.photo-main {
+  border-radius: 6px 6px 0 0;  
+  }
+
+  .photo-album ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .photo-album   li {
+    float: left;
+    width: 55px;
+    height: 55px;
+    padding: 7px;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+  }
+
+.photo-album {
+  padding: 0.7em 1em;
+  border-radius: 0 0 6px 6px;
+  background-color: #fff;
+}
+
+/* ----- Informations Section ----- */
+.product__info {
+  padding: 0.8em 0;
+}
+
+.title h1 {
+  margin-bottom: 0.1em;
+  color: #4c4c4c;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.title span {
+  font-size: 0.7em;
+  color: #a6a6a6;
+}
+
+.price span {
+  padding-left: 0.15em;
+  font-size: 2.9em;
+}
+
+.price {
+  margin: 1.5em 0;
+  color: #ff3f40;
+  font-size: 1.2em;
+}
+
+.variant  h3 {
+  margin-bottom: 1.1em;
+}
+
+.variant li {
+  float: left;
+  width: 35px;
+  height: 35px;
+  padding: 3px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.variant :first-child,.variant :hover{
+  border: 1px solid #a6a6a6;
+}
+
+.variant li:not(:first-child) {
+  margin-left: 0.1em;
+}
+
+.variant {
+  overflow: auto;
+}
+
+.description h3 {
+  margin-bottom:1px;
+}
+
+.description ul {
+  font-size: 0.8em;
+  list-style: disc;
+  margin-left: 1em;
+}
+
+.description  li {
+  text-indent: -0.6em;
+  margin-bottom: 0.5em;
+}
+
+.description {
+  clear: left;
+  margin: 2em 0;
+}
+
+.buy--btn {
+  padding: 1.5em 3.1em;
+  border: none;
+  border-radius: 7px;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  color: #fff;
+  background-color: #ff3f40;
+  box-shadow: 2px 2px 25px -7px #4c4c4c;
+  cursor: pointer;
+
+  
+}
+
+.buy--btn:active {
+  transform: scale(0.97);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #663f17;
+  padding: 5px;
+  text-decoration: none;
+  display: block;
+}
+
+.link1 {
+  color: #663f17;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #fff;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>News</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="CareMed demo project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/bootstrap4/bootstrap.min.css"
+    />
+    <link
+      href="plugins/font-awesome-4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plugins/OwlCarousel2-2.2.1/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plugins/OwlCarousel2-2.2.1/animate.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/news.css" />
+    <link rel="stylesheet" type="text/css" href="styles/news_responsive.css" />
+    <link rel="stylesheet" type="text/css" href="styles/update.css" />
+  </head>
+  <body>
+    <style type="text/css">
+      /* Style the form element with a border around it */
+      .subscribe form {
+        border: 4px solid #f1f1f1;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        background: url(images/blog1.jpg);
+        width: 100%;
+        padding: 20px;
+      }
+
+      .detail {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Add some padding and a grey background color to containers */
+      .subscribe {
+        padding: 20px;
+        background-color: #f1f1f1;
+      }
+
+      /* Style the input elements and the submit button */
+      .subscribe input[type="text"],
+      input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      /* Add margins to the checkbox */
+      .subscribe input[type="checkbox"] {
+        margin-top: 16px;
+      }
+
+      /* Style the submit button */
+      .subscribe input[type="submit"] {
+        background-color: #663f17;
+        color: white;
+        border: none;
+      }
+
+      .subscribe input[type="submit"]:hover {
+        opacity: 0.8;
+      }
+
+      /* Style inputs with type="text", select elements and textareas */
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+      }
+
+      /* Style the submit button with a specific background color etc */
+      .comment input[type="submit"] {
+        background-color: #663f17;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      /* When moving the mouse over the submit button, add a darker green color */
+      .comment input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      /* Add a background color and some padding around the form */
+      .comment {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+    </style>
+
+    <div class="super_container">
+      <header class="header trans_200">
+        <!-- Top Bar -->
+        <div class="top_bar">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div
+                  class="top_bar_content d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="top_bar_item"><a href="#"></a></div>
+                  
+                  <div
+                    class="emergencies d-flex flex-row align-items-center justify-content-start ml-auto"
+                  >
+                    Contact Us: +254 731 808 070
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Header Content -->
+        <div class="header_container">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div
+                  class="header_content d-flex flex-row align-items-center justify-content-start"
+                >
+                <nav class="main_nav ml-auto">
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          About us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="about.html">About Us</a>
+                          <a class="dropdown-item" href="what-we-do.html">Who we Are</a>
+                          <div class="dropdown-divider"></div>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="jobs.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Join Our Team
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="partners.html">Partners</a>
+                          <a class="dropdown-item" href="#">Volunteer/Internships</a>
+                          <a class="dropdown-item" href="jobs.html">Careers</a>
+                          <div class="dropdown-divider"></div> 
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="jobs.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Latest
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Events</a>
+                          <a class="dropdown-item" href="news.html">News</a>
+                          <a class="dropdown-item" href="#">Press Releases</a>
+                          <a class="dropdown-item" href="#">Podcasts</a>
+                          <div class="dropdown-divider"></div>
+                          
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Media
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Videos</a>
+                          <a class="dropdown-item" href="#">Photos</a>
+                          <a class="dropdown-item" href="#">Publications</a>
+                          <div class="dropdown-divider"></div>
+                          
+                        </div>
+                      </li>
+    
+                      <li><a href="contact.html">Contact</a></li>
+                      
+                    </ul>
+                  </nav>
+                  <div class="hamburger ml-auto">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Logo -->
+        <div class="logo_container_outer">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="logo_container">
+                  <a href="../">
+                    <div
+                      class="logo_content d-flex flex-column align-items-start justify-content-center"
+                    >
+                      <img
+                        style="height: 80px; width: 274px"
+                        src="images/power1.png"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Menu -->
+
+      <div class="menu_container menu_mm">
+        <!-- Menu Close Button -->
+        <div class="menu_close_container">
+          <div class="menu_close"></div>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="menu_inner menu_mm">
+          <div class="menu menu_mm">
+            <ul class="menu_list menu_mm">
+              <li class="menu_item menu_mm"><a href="index.html">Home</a></li>
+              <li class="menu_item menu_mm">
+                <a href="about.html">About us</a>
+              </li>
+              <li class="menu_item menu_mm">
+                <a href="what-we-do.html">What We do</a>
+              </li>
+              <li class="menu_item menu_mm">
+                <a href="jobs.html">Job Postings</a>
+              </li>
+              <li class="menu_item menu_mm">
+                <a href="events.html">Upcoming Events</a>
+              </li>
+              <li class="menu_item menu_mm"><a href="news.html">News</a></li>
+              <li class="menu_item menu_mm">
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu_extra">
+            <div class="menu_appointment"><a href="#"></a></div>
+            <div class="menu_emergencies">Contact Us: +254 731 808 070</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Home -->
+
+      <div class="home">
+        <div
+          class="home_background parallax-window"
+          data-parallax="scroll"
+          style="
+            background-image: linear-gradient(
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.5)
+            );
+          "
+          data-image-src="images/power2.jpg"
+          data-speed="0.8"
+        ></div>
+        <div class="home_container">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="home_content">
+                  <div class="home_title">
+                    <span>Power Shift</span> News Details
+                  </div>
+                  <div class="breadcrumbs">
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li>News Details</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- News -->
+
+      <div class="news">
+        <div class="container">
+          <div class="row">
+            <div class="detail">
+              <h2>
+                Africa needs a green economic post-Covid-19 recovery, report
+                finds
+              </h2>
+              <div class="fakeimg" style="height: 400px"></div>
+              <p style="font-size: 18px; font-weight: bold">
+                <i class="fa fa-user"></i> Posted by: Njango Njung'e
+              </p>
+              <p style="font-size: 18px; font-weight: bold">
+                <i class="fa fa-calendar"></i> September 20, 2021
+              </p>
+
+              <p>
+                The latest climate pledges put forward by governments would put
+                the world on course for 2.7C of global heating by the end of the
+                century – far above the goals set by the Paris Agreement, a UN
+                analysis finds. The review finds that countries’ current climate
+                commitments would see global greenhouse gas emissions increase
+                by 16 per cent by 2030, when compared to 2010 levels. For the
+                world to be on track to meeting the Paris Agreement’s aspiration
+                of limiting global heating to 1.5C above pre-industrial levels,
+                emissions would need to fall by 45 per cent by 2030, according
+                to a recent landmark climate assessment. Mohamed Adow, director
+                of think tank Power Shift Africa, said the analysis was a
+                “damning indictment” of progress to tackle emissions. “The UK
+                government can sign a new security relationship with Australia
+                but won’t push them to provide upgraded climate pledges ahead of
+                the most important summit held on British soil since the Second
+                World War,” he said. Australia’s plan for tackling its emissions
+                is rated “highly insufficient” by Climate Action Tracker, an
+                independent research group – and last week it was revealed that
+                the government secretly agreed to drop climate commitments from
+                a UK-Australia trade agreement..
+              </p>
+            </div>
+            <!-- News Posts -->
+            <div class="col-lg-8">
+              <div class="comment">
+                <form action="action_page.php">
+                  <label for="fname">First Name</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="firstname"
+                    placeholder="Your name.."
+                  />
+
+                  <label for="lname">Last Name</label>
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lastname"
+                    placeholder="Your last name.."
+                  />
+
+                  <label for="subject">Subject</label>
+                  <textarea
+                    id="subject"
+                    name="subject"
+                    placeholder="Write something.."
+                    style="height: 200px"
+                  ></textarea>
+
+                  <input type="submit" value="Post a comment" />
+                </form>
+              </div>
+
+              <div style="margin: 25px"></div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+              <div class="sidebar">
+                <!-- Archives -->
+                <div
+                  class="sidebar_archives sidebar_section"
+                  style="margin-top: -5px"
+                >
+                  <a
+                    class="twitter-timeline"
+                    data-tweet-limit="3"
+                    href="https://twitter.com/PowerShftAfrica?ref_src=twsrc%5Etfw"
+                    >Tweets by PowerShftAfrica</a
+                  >
+                  <script
+                    async
+                    src="https://platform.twitter.com/widgets.js"
+                    charset="utf-8"
+                  ></script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footerSection"></div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="styles/bootstrap4/popper.js"></script>
+    <script src="styles/bootstrap4/bootstrap.min.js"></script>
+    <script src="plugins/easing/easing.js"></script>
+    <script src="plugins/parallax-js-master/parallax.min.js"></script>
+    <script src="js/news.js"></script>
+    <script>
+      $(function () {
+        // $("#menuBar").load("header.html");
+        $("#footerSection").load("footer.html");
+      });
+    </script>
+  </body>
+</html>
