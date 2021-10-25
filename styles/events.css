@@ -643,321 +643,54 @@ section
 }
 
 /*********************************
-5. Home
-*********************************/
-
-.home
-{
-	width: 100%;
-	height: 473px;
-}
-.home_background
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-.home_container
-{
-	position: absolute;
-	left: 0;
-	bottom: 118px;
-	width: 100%;
-}
-.home_title
-{
-	font-size: 30px;
-	font-weight: 900;
-	color: #FFFFFF;
-}
-.home_title span
-{
-	color: #4BAF48;
-}
-.breadcrumbs
-{
-	margin-top: -2px;
-}
-.breadcrumbs ul li
-{
-	display: inline-block;
-	position: relative;
-}
-.breadcrumbs ul li:not(:last-child)::after
-{
-	display: inline-block;
-	position: relative;
-	content: '/';
-	margin-left: 7px;
-	margin-right: 2px;
-}
-.breadcrumbs ul li,
-.breadcrumbs ul li a
-{
-	font-size: 14px;
-	font-weight: 500;
-	color: #FFFFFF;
-}
-
-/*********************************
 6. Services
 *********************************/
 
-.services
-{
-	width: 100%;
-	background: #FFFFFF;
-	padding-top: 95px;
-	padding-bottom: 65px;
-}
-.services_row
-{
-	margin-top: 95px;
-}
-.service_col
-{
-	margin-bottom: 30px;
-}
-.service
-{
-	width: 100%;
-	background: #f5f7fa;
-	padding-top: 46px;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-bottom: 57px;
-}
-.service:hover
-{
-	background: #663F17;
-}
-.service::after
-{
-	display: block;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 4px;
-	background: #4BAF48;
-	content: '';
-	visibility: hidden;
-	opacity: 0;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.service:hover::after
-{
-	visibility: visible;
-	opacity: 1;
-}
-.service_icon
-{
-	width: 61px;
-	height: 61px;
-	margin-left: auto;
-	margin-right: auto;
-}
-.service_icon svg
-{
-	width: 61px;
-	height: 61px;
-}
-.service_icon img
-{
-	max-width: 100%;
-}
-.svg path,
-.svg rect,
-.svg polygon
-{
-	fill: #4BAF48;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.service:hover .svg path,
-.service:hover .svg rect,
-.service:hover .svg polygon
-{
-	fill: #FFFFFF;
-}
-.service_text
-{
-	margin-top: 16px;
-}
-.service_text p
-{
-	color: #696969;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.service_title
-{
-	font-size: 20px;
-	font-weight: 700;
-	color: #232323;
-	padding-top: 41px;
-	margin-top: 26px;
-}
-.service_title::before
-{
-	display: block;
-	position: absolute;
-	left: 50%;
-	top: 0;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-	transform: translateX(-50%);
-	width: 54px;
-	height: 3px;
-	background: #4BAF48;
-	content: '';
-}
-.service:hover .service_title
-{
-	color: #FFFFFF;
-}
-.service:hover .service_text p
-{
-	color: rgba(255,255,255,0.65);
-}
+
 
 /*********************************
-7. Features
+7. Events
 *********************************/
 
-.features
+.events
 {
 	width: 100%;
-	background: #663F17;
-	padding-top: 95px;
+	background: #f1eeee;
+	padding-top: 6em;
 	padding-left: 62px;
 	padding-right: 63px;
-	padding-bottom: 95px;
+	
 }
-.features .container
-{
-	max-width: 100%;
+.events h2{
+	font-size: 28px;
+	font-weight: 600;
+	color: rgb(41, 39, 39);
 }
-.features .container .row .col
-{
-	padding-left: 0;
-	padding-right: 0;
+.events .card-title{
+	color:rgb(41, 39, 39) ;
+	font-weight: 600;
 }
-.feature
-{
-	width: calc((100% - 64px) / 3);
+
+.past_events h2{
+	margin-top: 2em;
+	margin-bottom: 1em;
 }
-.feature:not(:last-child)
-{
-	margin-bottom: 30px;
+
+.card{
+	width: 22em;
 }
-.feature_image
-{
-	width: 100%;
+.cards{
+	margin-top: 2em;
 }
-.feature_image img
-{
-	max-width: 100%;
+.btn{
+	color: white;
 }
-.feature_content
-{
-	width: 100%;
-	background: #FFFFFF;
-	padding-left: 54px;
-	padding-top: 63px;
-	padding-bottom: 89px;
-	padding-right: 40px;
-}
-.feature_text
-{
-	margin-top: 34px;
-}
+
+
 
 /*********************************
-8. Text Section
+8. Subscribe Section
 *********************************/
+/* Uses main styles.css styling */
 
-.text_section
-{
-	width: 100%;
-	background: #FFFFFF;
-	padding-top: 95px;
-	padding-bottom: 94px;
-}
-.text_section_image
-{
-	width: 100%;
-}
-.text_section_image img
-{
-	max-width: 100%;
-}
-.text_section_content
-{
-	width: 100%;
-	height: 100%;
-}
-.text_section_text
-{
-	margin-top: 34px;
-}
-.text_section_button
-{
-	margin-top: 52px;
-}
 
-/*********************************
-9. CTA
-*********************************/
-
-.cta
-{
-	width: 100%;
-	padding-top: 131px;
-	padding-bottom: 116px;
-}
-.cta_background
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-.cta_content
-{
-	max-width: 768px;
-	margin-left: auto;
-	margin-right: auto;
-}
-.cta_content h2
-{
-	font-size: 48px;
-	font-weight: 700;
-	color: #FFFFFF;
-}
-.cta_content p
-{
-	font-size: 14px;
-	font-weight: 500;
-	color: #FFFFFF;
-	margin-top: -3px;
-}
-.cta_button
-{
-	margin-top: 38px;
-}

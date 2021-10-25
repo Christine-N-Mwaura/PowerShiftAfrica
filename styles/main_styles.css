@@ -1264,7 +1264,7 @@ section {
 9. Services
 *********************************/
 
-.services {
+.subscriber {
   width: 100%;
   background-color: #E0F2DF;;
   padding-top: 65px;
@@ -1419,7 +1419,7 @@ section {
   background-color: #4baf48;
   color: white;
   border: solid #4baf48;;
-  height: 2em;
+  height: 2.8em;
   width: 8em;
 }
 .subscribe-btn:hover{
