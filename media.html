@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Events</title>
+    <title>Media</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="CareMed demo project" />
@@ -13,8 +13,8 @@
     <link rel="stylesheet"type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css"/> 
     <link rel="stylesheet" type="text/css" href="styles/update.css" />
     <link rel="stylesheet" type="text/css" href="styles/main_styles.css" />
-    <link rel="stylesheet" type="text/css" href="styles/events.css" />
-    <link rel="stylesheet" type="text/css" href="styles/services_responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/media.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="styles/services_responsive.css"/> -->
     <link rel="stylesheet" type="text/css" href="styles/pages.css" />
   </head>
   <body>
@@ -69,12 +69,12 @@
                 <li><a class="nav-link scrollto " href="what-we-do.html">What We Do</a></li>					
                 <li class="dropdown"><a href="latest.html"><span>Latest</span> <i class="bi bi-chevron-down"></i></a>
                   <ul>
-                    <li class="dropdown"><a href="events.html"><span>Events</span> <i class="bi bi-chevron-right"></i></a>
+                    <li class="dropdown"><a href="events.html"><span>events</span> <i class="bi bi-chevron-right"></i></a>
                     </li>
                     <li><a href="#">Latest - Event Title Here - PSA</a></li>
                   </ul>
                 </li>
-                <li class="dropdown"><a href="media.html"><span>Media</span> <i class="bi bi-chevron-down"></i></a>
+                <li class="dropdown"><a href="events.html"><span>events</span> <i class="bi bi-chevron-down"></i></a>
                   <ul>
                     <li class="dropdown"><a href="#"><span>Videos</span> <i class="bi bi-chevron-right"></i></a>
                     </li>
@@ -128,7 +128,7 @@
                 <a href="jobs.html">Job Postings</a>
               </li>
               <li class="menu_item menu_mm">
-                <a href="events.html">Upcoming Events</a>
+                <a href="events.html">Upcoming events</a>
               </li>
               <li class="menu_item menu_mm"><a href="news.html">News</a></li>
               <li class="menu_item menu_mm">
@@ -166,8 +166,7 @@
                   <div class="breadcrumbs">
                     <ul>
                       <li><a href="#">Home</a></li>
-                      <li>Latest</li>
-                      <li>Events</li>
+                      <li>Media</li>
                     </ul>
                   </div>
                 </div>
@@ -177,10 +176,175 @@
         </div>
       </div>
 
-      <div class="events">
-        <h2>Upcoming events</h2>
+      <div class="featured">
+        <h2>Featured</h2>
         <div class="container-full cards">
           <div class="row">
+            <div class="col-lg-12">
+              <iframe src="https://www.youtube.com/embed/GrrTLrP99BY">
+              </iframe>
+            </div>
+          </div>
+          <div class="row featured-options">
+            <div class="col-lg-3">
+              <a href="#" id="videos-btn" class="btn">Videos</a>
+              <a href="#" id="photos-btn" class="btn">Photos</a>
+              <a href="#" id="publications-btn" class="btn">Publications</a>
+              <a href="#"id="podcast-btn"  class="btn">Podcasts</a>
+            </div>
+            <div class="col-lg-9">
+              <div id="photos" class="photos-div">
+                <div class="row">
+                  <div class="col-lg-6 mb-5">
+                    <img src="images/power2.jpg" alt="" srcset="">
+                    <img src="images/power4.jpg" alt="" srcset="">
+                  </div>
+                  <div class="col-lg-6">
+                  <img src="images/power5.jpg" alt="" srcset="">
+                  <img src="images/power6.jpg" alt="" srcset="">
+                </div>
+                </div>
+              </div>
+              <div id="videos" class="videos-div">
+                <div class="row">
+                  <div class="col-lg-6 mb-5">
+                    <iframe src="https://www.youtube.com/embed/GrrTLrP99BY"></iframe>
+                    <iframe src="https://www.youtube.com/embed/GrrTLrP99BY"></iframe>
+                    <iframe src="https://www.youtube.com/embed/GrrTLrP99BY"></iframe>
+
+                  </div>
+                  <div class="col-lg-6">
+                    <iframe src="https://www.youtube.com/embed/GrrTLrP99BY"></iframe>
+                    <iframe src="https://www.youtube.com/embed/GrrTLrP99BY"></iframe>
+                    <iframe src="https://www.youtube.com/embed/GrrTLrP99BY"></iframe>
+                </div>
+                </div>
+              </div>
+              <div id="publications" class="pub-div">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="publication">
+                      <div class="pub_img">
+                        <img class="pdficon-img"src="images/publications-img.png" alt="" srcset="">
+                      </div>
+                      <div class="pub_text">
+                        <h3 class="media-subtitle">Climate debt</h3>
+                        <div><i class="fa fa-folder" aria-hidden="true"></i>
+                          <span class="media-spanmb">1mb</span> </div> 
+                        <button  class="btn btn-primary pt-1"> 
+                          <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                        Download
+                        </button>
+                      </div>
+                    </div>
+                    <div class="publication">
+                      <div class="pub_img">
+                        <img class="pdficon-img"src="images/publications-img.png" alt="" srcset="">
+                      </div>
+                      <div class="pub_text">
+                        <h3 class="media-subtitle">EU Africa Strategy Brief Plan</h3>
+                        <div><i class="fa fa-folder" aria-hidden="true"></i>
+                          <span class="media-spanmb">1mb</span> </div> 
+                        <button  class="btn btn-primary pt-1"> 
+                          <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                        Download
+                        </button>
+                      </div>
+                    </div>
+                    <div class="publication">
+                      <div class="pub_img">
+                        <img class="pdficon-img"src="images/publications-img.png" alt="" srcset="">
+                      </div>
+                      <div class="pub_text">
+                        <h3 class="media-subtitle">Climate debt</h3>
+                        <div><i class="fa fa-folder" aria-hidden="true"></i>
+                          <span class="media-spanmb">1mb</span> </div> 
+                        <button  class="btn btn-primary pt-1"> 
+                          <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                        Download
+                        </button>
+                      </div>
+                    </div>
+                    <div class="publication">
+                      <div class="pub_img">
+                        <img class="pdficon-img"src="images/publications-img.png" alt="" srcset="">
+                      </div>
+                      <div class="pub_text">
+                        <h3 class="media-subtitle">EU Africa Strategy Brief Plan</h3>
+                        <div><i class="fa fa-folder" aria-hidden="true"></i>
+                          <span class="media-spanmb">1mb</span> </div> 
+                        <button  class="btn btn-primary pt-1"> 
+                          <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                        Download
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="publication">
+                      <div class="pub_img">
+                        <img class="pdficon-img"src="images/publications-img.png" alt="" srcset="">
+                      </div>
+                      <div class="pub_text">
+                        <h3 class="media-subtitle">Climate debt</h3>
+                        <div><i class="fa fa-folder" aria-hidden="true"></i>
+                          <span class="media-spanmb">1mb</span> </div> 
+                        <button  class="btn btn-primary pt-1"> 
+                          <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                        Download
+                        </button>
+                      </div>
+                    </div>
+                    <div class="publication">
+                      <div class="pub_img">
+                        <img class="pdficon-img"src="images/publications-img.png" alt="" srcset="">
+                      </div>
+                      <div class="pub_text">
+                        <h3 class="media-subtitle">EU Africa Strategy Brief Plan</h3>
+                        <div><i class="fa fa-folder" aria-hidden="true"></i>
+                          <span class="media-spanmb">1mb</span> </div> 
+                        <button  class="btn btn-primary pt-1"> 
+                          <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                        Download
+                        </button>
+                      </div>
+                    </div>
+                    <div class="publication">
+                      <div class="pub_img">
+                        <img class="pdficon-img"src="images/publications-img.png" alt="" srcset="">
+                      </div>
+                      <div class="pub_text">
+                        <h3 class="media-subtitle">Climate debt</h3>
+                        <div><i class="fa fa-folder" aria-hidden="true"></i>
+                          <span class="media-spanmb">1mb</span> </div> 
+                        <button  class="btn btn-primary pt-1"> 
+                          <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                        Download
+                        </button>
+                      </div>
+                    </div>
+                    <div class="publication">
+                      <div class="pub_img">
+                        <img class="pdficon-img"src="images/publications-img.png" alt="" srcset="">
+                      </div>
+                      <div class="pub_text">
+                        <h3 class="media-subtitle">EU Africa Strategy Brief Plan</h3>
+                        <div><i class="fa fa-folder" aria-hidden="true"></i>
+                          <span class="media-spanmb">1mb</span> </div> 
+                        <button  class="btn btn-primary pt-1"> 
+                          <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                        Download
+                        </button>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+              
+              </div>
+             
+            </div>
+          </div>
+            <div class="row">
             <div class="col-md-4 col-sm-4">
               <div class="card">
                 <img class="card-img-top" src="images/power5.jpg" alt="Card image cap">
@@ -320,9 +484,9 @@
           </div>
         </div>
 
-        <!-- Past Events Section-->
+        <!-- Past events Section-->
      <div class="past_events">
-          <h2>Past Events</h2>
+          <h2>Past events</h2>
           <div class="row mt-4">
             <div class="col-md-4 col-sm-4">
               <div class="card">
@@ -432,6 +596,7 @@
       //load nav menu
       $(function () {
         // $("#menuBar").load("header.html");
+        $('#photos-btn').focus();
         $("#footerSection").load("footer.html");
       });
     </script>
