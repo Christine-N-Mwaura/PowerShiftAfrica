@@ -39,7 +39,8 @@ $(document).ready(function()
 	});
 
 	initMenu();
-
+	showSections();
+	
 	/* 
 
 	2. Set Header
@@ -113,6 +114,54 @@ $(document).ready(function()
 		fs.removeClass('active');
 		hambActive = false;
 		menuActive = false;
+	}
+
+
+
+	//show divs on click podcasts section
+	function showSections()
+	{
+		$(".btn-options").click(function(){
+			let val = $(this).attr('id');
+			if(val == 'videos-btn'){
+				$('#videos').show('slow');
+				$('#photos,#publications,#podcasts').hide('slow');
+				$("#videos-btn").css("background-color","#4baf48");
+				$("#videos-btn").css("color","#fff");
+				$("#podcasts-btn,#photos-btn,#publications-btn").css("background-color","#fff");
+				$('#podcasts-btn,#photos-btn,#publications-btn').css( "color","rgb(41, 39, 39)");
+	
+			}else if(val == 'photos-btn'){
+				$('#photos').show('slow');
+				$('#videos,#publications,#podcasts').hide();
+				$("#photos-btn").css("background-color","#4baf48");
+				$("#photos-btn").css("color","#fff");
+				$("#photos-btn").css("background-color","#4baf48");
+				$("#photos-btn").css("color","#fff");
+				$("#podcasts-btn,#videos-btn,#publications-btn").css("background-color","#fff");
+				$('#podcasts-btn,#videos-btn,#publications-btn').css( "color","rgb(41, 39, 39)");
+	
+			}else if(val == 'publications-btn'){
+				$('#publications').show('slow');
+				$('#videos,#photos,#podcasts').hide();
+				$("#publications-btn").css("background-color","#4baf48");
+				$("#publications-btn").css("color","#fff");
+				$("#photos-btn,#videos-btn,#podcasts-btn").css("background-color","#fff");
+				$('#photos-btn,#videos-btn,#podcasts-btn').css( "color","rgb(41, 39, 39)");
+				
+			}else{
+				$('#podcasts').show('slow');
+				$('#videos,#photos,#publications').hide();
+				$("#podcastss-btn").css("background-color","#4baf48");
+				$("#podcasts-btn").css("color","#fff");
+				$("#podcasts-btn").css("background-color","#4baf48");
+				$("#podcasts-btn").css("color","#fff");
+				$("#photos-btn,#videos-btn,#publications-btn").css("background-color","#fff");
+				$('#photos-btn,#videos-btn,#publications-btn').css( "color","rgb(41, 39, 39)");
+			}
+			
+		})
+		
 	}
 
 });

@@ -7,6 +7,7 @@
     <meta name="description" content="CareMed demo project" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css"href="styles/bootstrap4/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"type="text/css"/>
     <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css"/>
     <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css"/>
@@ -16,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="styles/media.css" />
     <!-- <link rel="stylesheet" type="text/css" href="styles/services_responsive.css"/> -->
     <link rel="stylesheet" type="text/css" href="styles/pages.css" />
+    <link rel="stylesheet" type="text/css" href="styles/audio.css" />
+
   </head>
   <body>
     <div class="super_container">
@@ -187,12 +190,13 @@
           </div>
           <div class="row featured-options">
             <div class="col-lg-3">
-              <a href="#" id="videos-btn" class="btn">Videos</a>
-              <a href="#" id="photos-btn" class="btn">Photos</a>
-              <a href="#" id="publications-btn" class="btn">Publications</a>
-              <a href="#"id="podcast-btn"  class="btn">Podcasts</a>
+              <a href="#videos" id="videos-btn" class="btn btn-options">Videos</a>
+              <a href="#photos" id="photos-btn" class="btn btn-options">Photos</a>
+              <a href="#publications" id="publications-btn"class="btn btn-options">Publications</a>
+              <a href="#podcasts"id="podcast-btn"  class="btn btn-options">Podcasts</a>
             </div>
             <div class="col-lg-9">
+              <!-- Photos section -->
               <div id="photos" class="photos-div">
                 <div class="row">
                   <div class="col-lg-6 mb-5">
@@ -205,7 +209,8 @@
                 </div>
                 </div>
               </div>
-              <div id="videos" class="videos-div">
+              <!-- Videos section -->
+              <div id="videos" class="videos-div hidden">
                 <div class="row">
                   <div class="col-lg-6 mb-5">
                     <iframe src="https://www.youtube.com/embed/GrrTLrP99BY"></iframe>
@@ -220,7 +225,8 @@
                 </div>
                 </div>
               </div>
-              <div id="publications" class="pub-div">
+              <!-- Publications section -->
+              <div id="publications" class="pub-div hidden">
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="publication">
@@ -341,246 +347,79 @@
                 </div>
               
               </div>
+              <!-- Podcasts section -->
+              <div id="podcasts" class="pod-div hidden">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="card" style="width: 18rem;">
+                      <div class="card-body">
+                        <h5 class="card-title">Podcast Title Here</h5>
+                        <i class="fas fa-microphone-alt"></i>							        
+                        <a href="#"> <span class="card-date">5<sup>th</sup> November 2021</span></a>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div id="audio-player-container">
+                          <!-- swaps with pause icon -->
+                          <button id="play-icon"></button>
+                        </div>
+                        <a href="#"class="btn">1hr 30min</a>
+                      </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                      <div class="card-body">
+                        <h5 class="card-title">Podcast Title Here</h5>
+                        <i class="fas fa-microphone-alt"></i>							        
+                        <a href="#"> <span class="card-date">5<sup>th</sup> November 2021</span></a>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div id="audio-player-container">
+                          <!-- swaps with pause icon -->
+                          <button id="play-icon"></button>
+                        </div>
+                        <a href="#"class="btn">1hr 30min</a>
+                      </div>
+                    </div>  
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="card" style="width: 18rem;">
+                      <div class="card-body">
+                        <h5 class="card-title">Podcast Title Here</h5>
+                        <i class="fas fa-microphone-alt"></i>							        
+                        <a href="#"> <span class="card-date">5<sup>th</sup> November 2021</span></a>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div id="audio-player-container">
+                          <!-- swaps with pause icon -->
+                          <button id="play-icon"></button>
+                        </div>
+                        <a href="#"class="btn">1hr 30min</a>
+                      </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                      <div class="card-body">
+                        <h5 class="card-title">Podcast Title Here</h5>
+                        <i class="fas fa-microphone-alt"></i>							        
+                        <a href="#"> <span class="card-date">5<sup>th</sup> November 2021</span></a>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div id="audio-player-container">
+                          <!-- swaps with pause icon -->
+                          <button id="play-icon"></button>
+                        </div>
+                        <a href="#"class="btn">1hr 30min</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
              
             </div>
           </div>
-            <div class="row">
-            <div class="col-md-4 col-sm-4">
-              <div class="card">
-                <img class="card-img-top" src="images/power5.jpg" alt="Card image cap">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-3 col-sm-3">
-                      <p class="card-date pl-2 pt-3">October <span class="date-no">27</span></p>
-                    </div>
-                    <div class="col-md-9 col-sm-9">
-                      <h5 class="card-title pt-3 pl-0">Event Title Here</h5>
-                      <div class="card-body pt-0 pl-0">
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>	
-                        <div class="">
-                          <a href="#" class="btn  pt-1">Read More</a>
-                         </div> 
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-              <div class="card" >
-                <img class="card-img-top" src="images/power2.jpg" alt="Card image cap">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-3 col-sm-3">
-                      <p class="card-date pl-1 pt-3">October <span class="date-no">27</span></p>
-                    </div>
-                    <div class="col-md-9 col-sm-9">
-                      <h5 class="card-title pt-3 pl-0">Event Title Here</h5>
-                      <div class="card-body pt-0 pl-0">
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>	
-                        <div class="">
-                          <a href="#" class="btn  pt-1">Read More</a>
-                         </div> 
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-              <div class="card">
-                <img class="card-img-top" src="images/power4.jpg" alt="Card image cap">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <p class="card-date pl-1 pt-3">October <span class="date-no">27</span></p>
-                    </div>
-                    <div class="col-md-9 col-sm-12">
-                      <h5 class="card-title pt-3 pl-0">Event Title Here</h5>
-                      <div class="card-body pt-0 pl-0">
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>	
-                        <div class="">
-                          <a href="#" class="btn  pt-1">Read More</a>
-                         </div> 
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col-md-4 col-sm-4">
-              <div class="card">
-                <img class="card-img-top" src="images/power5.jpg" alt="Card image cap">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-3 col-sm-3">
-                      <p class="card-date pl-2 pt-3">October <span class="date-no">27</span></p>
-                    </div>
-                    <div class="col-md-9 col-sm-9">
-                      <h5 class="card-title pt-3 pl-0">Event Title Here</h5>
-                      <div class="card-body pt-0 pl-0">
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>	
-                        <div class="">
-                          <a href="#" class="btn pt-1">Read More</a>
-                         </div> 
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-              <div class="card" >
-                <img class="card-img-top" src="images/power2.jpg" alt="Card image cap">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-3 col-sm-3">
-                      <p class="card-date pl-1 pt-3">October <span class="date-no">27</span></p>
-                    </div>
-                    <div class="col-md-9 col-sm-9">
-                      <h5 class="card-title pt-3 pl-0">Event Title Here</h5>
-                      <div class="card-body pt-0 pl-0">
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>	
-                        <div class="">
-                          <a href="#" class="btn  pt-1">Read More</a>
-                         </div> 
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-              <div class="card">
-                <img class="card-img-top" src="images/power4.jpg" alt="Card image cap">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <p class="card-date pl-1 pt-3">October <span class="date-no">27</span></p>
-                    </div>
-                    <div class="col-md-9 col-sm-12">
-                      <h5 class="card-title pt-3 pl-0">Event Title Here</h5>
-                      <div class="card-body pt-0 pl-0">
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>	
-                        <div class="">
-                          <a href="#" class="btn  pt-1">Read More</a>
-                         </div> 
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+         
         </div>
 
         <!-- Past events Section-->
-     <div class="past_events">
-          <h2>Past events</h2>
-          <div class="row mt-4">
-            <div class="col-md-4 col-sm-4">
-              <div class="card">
-                <img class="card-img-top" src="images/power5.jpg" alt="Card image cap">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-3 col-sm-3">
-                      <p class="card-date pl-2 pt-3">October <span class="date-no">27</span></p>
-                    </div>
-                    <div class="col-md-9 col-sm-9">
-                      <h5 class="card-title pt-3 pl-0">Event Title Here</h5>
-                      <div class="card-body pt-0 pl-0">
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>	
-                        <div class="">
-                          <a href="#" class="btn  pt-1">Read More</a>
-                         </div> 
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-              <div class="card" >
-                <img class="card-img-top" src="images/power2.jpg" alt="Card image cap">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-3 col-sm-3">
-                      <p class="card-date pl-1 pt-3">October <span class="date-no">27</span></p>
-                    </div>
-                    <div class="col-md-9 col-sm-9">
-                      <h5 class="card-title pt-3 pl-0">Event Title Here</h5>
-                      <div class="card-body pt-0 pl-0">
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>	
-                        <div class="">
-                          <a href="#" class="btn  pt-1">Read More</a>
-                         </div> 
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-              <div class="card">
-                <img class="card-img-top" src="images/power4.jpg" alt="Card image cap">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <p class="card-date pl-1 pt-3">October <span class="date-no">27</span></p>
-                    </div>
-                    <div class="col-md-9 col-sm-12">
-                      <h5 class="card-title pt-3 pl-0">Event Title Here</h5>
-                      <div class="card-body pt-0 pl-0">
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>	
-                        <div class="">
-                          <a href="#" class="btn  pt-1">Read More</a>
-                         </div> 
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    </div>
+     
   </div>
 
 	<!-- SUBSCRIBE SECTION -->
-  <div class="subscriber">
-		<div class="container text-center">
-			<div class="row">
-				<div class="col">
-					<div ><h2 class="styled-h2">Subscribe to stay up to date with our events</h2></div>
-				</div>
-			</div>
-			<div class="row">
-
-				<!-- Subscribe form -->
-				<div class="col-lg-12 col-md-12 service_col text-center">
-                      <div class="subscribe">
-						<input class="name mr-1" type="text" placeholder="Name" name="name" required>
-						<input class="mail mr-1" type="text" placeholder="Email address" name="mail" required>
-						<button class="subscribe-btn">Subscribe</button>
-					  </div>
-                       
-        </div>
-				</div>
-			</div>
-		</div>
+  
 	</div>
 
       <div id="footerSection"></div>
@@ -589,9 +428,12 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="styles/bootstrap4/popper.js"></script>
     <script src="styles/bootstrap4/bootstrap.min.js"></script>
+    <script src="https://cdnjs.com/libraries/bodymovin" type="text/javascript"></script>
     <script src="plugins/easing/easing.js"></script>
     <script src="plugins/parallax-js-master/parallax.min.js"></script>
     <script src="js/services.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/news.js"></script>
     <script>
       //load nav menu
       $(function () {

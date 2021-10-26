@@ -703,20 +703,31 @@ iframe{
     box-shadow: none;
     border-color: transparent;
 }
+.hidden{
+	display: none;
+}
+
+/* Photos */
 
 .photos-div img{
     width: 360px;
     height: 200px;
     margin-top: 1.6em;
 }
+
+/* Videos */
+
 .videos-div iframe{
-    /* display: none; */
+    
     width: 360px;
     height: 200px;
 }
-.videos-div iframe {
-    display: none;
-}
+
+
+
+/* Publications */
+
+
 
 .pdficon-img{
     width: 6.6em;
@@ -734,6 +745,43 @@ iframe{
     color: white;
     height: 2.4em;
 }
+
+
+/* Podcasts */
+.pod-div .col-lg-6{
+	margin-top: 3em;
+}
+.pod-div .card-title{
+    color: rgb(41, 39, 39);
+    font-size: 18px;
+    font-weight: 700;
+
+}
+.pod-div .fa-microphone-alt{
+    font-size: 12.6px;
+}
+.pod-div .card-text{
+    margin-top: 1em;
+    line-height: 1.3em;
+}
+.pod-div a{
+    padding-left: 6px;
+}
+.pod-div .btn{
+    background-color: #c6e0c4;
+    text-transform: lowercase;
+    border: none;
+    font-size: 12px;
+    padding-left: 0.8em;
+    font-weight: 500;
+    border-radius: 50px;
+    width: 76px;
+}
+.pod-div .btn:hover{
+    background-color: #c6e0c4;
+    color: rgb(41, 39, 39)!important;
+}
+
 .past_events h2{
 	margin-top: 2em;
 	margin-bottom: 1em;
