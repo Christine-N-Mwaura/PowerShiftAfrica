@@ -665,7 +665,7 @@ iframe{
     width: 72.4em;
     height: 300px;
 }
-.featured h2{
+.featured h2,.about-careers h2,.open-pos h2{
 	font-size: 28px;
 	font-weight: 600;
 	color: rgb(41, 39, 39);
@@ -800,8 +800,104 @@ iframe{
 
 
 /*********************************
-8. Subscribe Section
+8. Career pages styling
 *********************************/
-/* Uses main styles.css styling */
+/*about */
+.about-careers
+{
+	width: 100%;
+	background: #faf6f6;
+	padding-top: 6em;
+	padding-left: 62px;
+	padding-right: 63px;
+	
+	
+}
+
+.about-careers img{
+	height: 16em;	
+	width: 22em;
+}
+
+.about-careers p{
+	text-align: left;
+	line-height: 1.6em;
+	color: rgb(63, 58, 58);
+}
 
 
+/* Join Us section */
+.join-us{
+	width: 100%;
+	background-color: #663F17;
+	
+}
+.join-us h2,.reason-col p{
+	color: #fcf9f9;
+}
+.reason-col{
+	padding: 1em;
+}
+.reason-col h3{
+	color: #4baf48;
+	font-size: 22px ;
+}
+
+.reason-col p{
+	font-size:16px ;
+	line-height: 1.4em;
+	font-weight: 400;
+}
+.join-us .media_title{
+	padding-top: 1em;
+}
+.join-us .media_title::after {
+	left: 26em; 
+	top: 1.5em;
+}
+.join-us .media_title::before {
+	left: 13em; 
+	top: 1.5em;
+}
+
+/* Open postitions section */
+.open-pos h2{
+	margin-top: 3em;
+	margin-left: 1em;
+}
+.open-pos .card{
+	width: 20em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	box-shadow: 5px 4px 15px 2px rgba(0,0,0,0.2);
+}
+.open-pos .card-title{
+	color: rgb(41, 39, 39);
+	font-size: 20px;
+	font-weight: 400;
+}
+.open-pos .card-content{
+	display: flex;
+	flex-direction: row;
+}
+.card .card-link{
+	color: #4baf48;
+	font-weight: 600;
+	
+}
+.card-content .card-link {
+	background-color: #4baf48;
+	color:#fcf9f9 ;
+	margin-left: 1.6em;
+	padding-left: 0.6em;
+	padding-top: 0.2em;
+	margin-top: 0.2em;
+	border-radius: 30px;
+	font-size: 10px;
+	width: 5.1em;
+	height: 1.8em;
+}
+.card .card-text{
+	font-weight: 400;
+	padding-bottom: 1em;
+}
