@@ -669,6 +669,7 @@ section
     top: 0.5em;
     z-index: 1;
 }
+
 .energy h2{
     padding-left: 1em;
     margin-bottom: 1em;
@@ -697,6 +698,7 @@ section
     position: relative;
    
 }
+
 .section-done h2{
     text-align: left;
     color: #f1eeee;
@@ -706,12 +708,17 @@ section
     font-size: 32px;
     font-weight: 800;
 }
+
+
 .section-done .col-lg-4 p{
     color: #f1eeee;
     font-size: 58px;
     font-weight: 800;
     line-height: 0.8em;
     
+}
+.sustainable-dev .col-lg-4 p{
+	padding-top: 1.4em;
 }
 .section-done .col-lg-4 span{
     color: rgb(41, 39, 39);
@@ -725,12 +732,61 @@ section
 
 
 /* Projects section */
-
+.projects .styled-h2{
+	color: #663F17;
+	margin-top: 1em;
+}
 /***** Top content *****/
 
-.top-content { width: 100%; padding-top: 100px; }
+.top-content { width: 100%; padding-top: 40px; }
 
 .carousel-control-next, .carousel-control-prev { border: 0; }
+
+/* .carousel-slide img{
+	width: 250px;
+	height: 280px;
+} */
+.myCarousel img{
+	width: 280px;
+	height: 280px;
+}
+.carousel-item{
+	position: relative;
+}
+.carousel-item .proj-name p{
+	position: relative;
+	background-color: #f7f3f3;
+	color: #663F17;
+	font-weight: 500;
+	padding-top: 0.6em;
+	height: 54px;
+	width: 194px;
+}
+.carousel-item .proj-name .btn{
+	position: absolute;
+	width: 9.9em;
+	height: 3em;
+	top: 1em;
+	left: 2em;
+}
+.carousel-item .proj-name .btn:hover{
+	background-color: #663F17;
+	cursor: pointer;
+}
+.carousel-item .proj-name{
+	position: absolute;
+	bottom: 2.6em;
+}
+.carousel-control-next .fa-chevron-right{
+	color: #000;
+	padding-left: 12em;
+	font-size: 18px;
+}
+.carousel-control-prev .fa-chevron-left{
+	color: #000;
+	padding-right: 10em;
+	font-size: 22px;
+}
 
 
 /* Get In Touch Section */
@@ -769,8 +825,24 @@ cursor: pointer;
 *********************************/
 /*resilience section */
 .resilience img{
-    width: 26em;
-    height:22em;
+    width: 29em;
+    height:25em;
 }
 
+/*********************************
+9. Sustainable Development
+*********************************/
 
+.sustainable img{
+	top:0.2em ;
+	width: 28em;
+    height: 25em;
+}
+
+/*********************************
+10. Multilateral Climate
+*********************************/
+.multilateral img{
+    width: 28em;
+    height:25em;
+}

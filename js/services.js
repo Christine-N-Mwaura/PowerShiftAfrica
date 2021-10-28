@@ -166,7 +166,7 @@ $(document).ready(function()
 			*/
 			var $e = $(e.relatedTarget);
 			var idx = $e.index();
-			var itemsPerSlide = 5;
+			var itemsPerSlide = 4;
 			var totalItems = $('.carousel-item').length;
 			
 			if (idx >= totalItems-(itemsPerSlide-1)) {
