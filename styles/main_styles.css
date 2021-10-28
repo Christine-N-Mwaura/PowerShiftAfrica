@@ -872,7 +872,7 @@ section {
 
 .boxes {
   width: 100%;
-  background: rgb(235, 230, 230);
+  /* background: rgb(235, 230, 230); */
   z-index: 10;
   padding-bottom: 35px;
 }
@@ -886,6 +886,8 @@ section {
   background: #fff;
   padding-left: 42px;
   padding-top: 29px;
+  -webkit-box-shadow: 0px 5px 14px -8px #1F3318; 
+box-shadow: 0px 5px 14px -8px #1F3318;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
   -ms-transition: all 200ms ease;
@@ -1120,6 +1122,12 @@ section {
    color: #000;
  }
 
+ .latest .power-title{
+   font-size: 12px;
+   padding-top: 0.6em;
+   padding-left: 2.0em;
+ }
+
  .btn{
   background-color:#663f17 ;
   border:none;
@@ -1132,13 +1140,17 @@ section {
  }
  .card{
    border: none;
-   width: 20rem;
+   width: 22em;
+ }
+ .card-body .fas{
+font-size: 11px;
  }
  .card-date{
    color: #4baf48;
    font-size: 12px;
    font-weight: 400;
    line-height: 2em;
+   padding-left: 0.4em;
  }
  .card-date .date-no{
    font-size: 28px;
@@ -1152,6 +1164,16 @@ section {
  .card-text{
   line-height: 1.6em;
   font-size: 14px;
+  padding-bottom: 1em;
+ }
+ .latest .card_text{
+  color: #4BAF48;
+  font-size: 14px;  
+  letter-spacing: 0.6px;
+ }
+ .card_text .fas{
+   color: #696969;
+   font-size: 13px;
  }
 
 /*********************************

@@ -79,10 +79,13 @@
   transform: translate(-50%, -50%);
 }
 .footer_about_list li span {
-  font-size: 12px;
+  font-size: 14px;
     font-weight: 500;
     color: #ffffff;
     padding-left: 1px;
+}
+.footer_about_list li span .rose{
+  margin-left: 2.6em;
 }
 .footer_column {
   padding-top: 36px;
