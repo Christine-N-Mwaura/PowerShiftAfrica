@@ -655,7 +655,7 @@ section
 .energy
 {
 	width: 100%;
-	background: #f3f0f0;
+	background: #f8f8f8;
 	padding-top: 6em;
 	padding-left: 62px;
 	padding-right: 63px;
@@ -845,4 +845,67 @@ cursor: pointer;
 .multilateral img{
     width: 28em;
     height:25em;
+}
+
+
+/*********************************
+11. What we do section
+*********************************/
+.section1{
+	background-color: #f1eeee;
+}
+.section1 .fas{
+	padding-top: 1em;
+	background-color: rgb(234, 234, 241);
+	width: 66px;
+	height: 66px;
+	padding-left: 1em;
+	border-radius: 50%;
+}
+.section2{
+	padding-bottom: 3em;
+}
+.section2 .container{
+	margin-left: 10em;
+}
+.section2 .col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 40%;
+    max-width: 50%;
+}
+
+.section2 .fas{
+	color: #4BAF48;
+	font-size: 24px;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.section2 h2{
+	color: #663F17;
+	font-size: 16px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+.section2 p{
+	color: rgb(41, 39, 39);
+	line-height: 1.4em;
+	font-weight: 400;
+	font-size: 14px;
+}
+.section2 .btn{
+	background-color: #4BAF48;
+}
+.section2 .btn:hover{
+	color: white!important;
+}
+
+
+.what-we-do img{
+    margin-left: 2em;
+    width: 14em;
+    height: 15em;
+    position: absolute;
+    top: 0.5em;
+    z-index: 1;
 }

@@ -983,9 +983,7 @@ section {
 .about_content{
   margin-left: 10em;
 }
-.about_text {
-  margin-top: 34px;
-}
+
 .about_button {
   margin-top: 42px;
   background-color:#4baf48;
@@ -1020,12 +1018,12 @@ section {
   left: 80px;
 }
 
-.about_text h2{
+/* .about_text h2{
   color: rgb(66, 63, 63);
   font-size: 22px;
   font-weight: 600;
   
-}
+} */
 
 /*********************************
 8. Departments
