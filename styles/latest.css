@@ -552,7 +552,7 @@ section
 
 .news-sec .top-content h2{
 	padding-top: 1em;
-	padding-left: 2.6em;
+	/* padding-left: 2.6em; */
 }
 
 .news-sec .top-content p{
@@ -568,9 +568,9 @@ section
 	margin-bottom: 4em;
 }
 .press .top-content h2{
-	padding-left: 2.6em;
+	/* padding-left: 2.6em; */
 	padding-bottom: 0.6em;
-	font-size: 32px;
+	font-size: 30px;
 	/* font-weight: 600; */
 }
 .press .top-content p{

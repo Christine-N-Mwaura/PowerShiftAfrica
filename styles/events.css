@@ -664,22 +664,26 @@ section
 
 /* Upcoming events section */
 .title{
-	padding-left: 6.4em;
+	padding-left: 3.4em;
 }
 .up-events{
-	margin-left: 14%;
+	margin-left: 1%;
 }
 .up-events .card{
-	width: 24em;
+	width: 33em;
+}
+.up-events .date-no{
+	font-size: 38px;
 }
 .up-events .power-title{
-	font-size: 13px;
+	font-size: 12px;
 	padding-left: 2em;
 	padding-top: 1em;
 }
 .up-events .card-img-top{
-	width: 24em;
+	width: 33em;
 	height: 12em;
+	
 }
 .up-events .card h5{
 	font-size: 24px;
@@ -725,8 +729,21 @@ section
  padding-top: 1em;
 }
 
+.past_events {
+	margin-left: 1.4em;
+}
+
 .past_events h5{
 	font-size: 20px;
+}
+
+.past_events .card-img-top{
+	width: 25em;
+	height: 12em;
+}
+
+.past_events .card{
+	width: 25em;
 }
 
 /*********************************
