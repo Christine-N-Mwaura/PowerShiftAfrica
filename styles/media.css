@@ -662,7 +662,7 @@ section
 	
 }
 iframe{
-    width: 72.4em;
+    width: 72.1em;
     height: 300px;
 }
 .featured h2,.about-careers h2,.open-pos h2{
@@ -815,50 +815,21 @@ iframe{
 }
 
 .about-careers img{
-	height: 16em;	
-	width: 22em;
+	margin-top: 2em;
+	margin-bottom: 6em;
+	height: 36em;	
+	width: 70em;
 }
 
+.about-careers h2{
+	padding-bottom: 0.8em;
+}
 .about-careers p{
 	text-align: left;
 	line-height: 1.6em;
 	color: rgb(63, 58, 58);
 }
 
-
-/* Join Us section */
-.join-us{
-	width: 100%;
-	background-color: #663F17;
-	
-}
-.join-us h2,.reason-col p{
-	color: #fcf9f9;
-}
-.reason-col{
-	padding: 1em;
-}
-.reason-col h3{
-	color: #4baf48;
-	font-size: 22px ;
-}
-
-.reason-col p{
-	font-size:16px ;
-	line-height: 1.4em;
-	font-weight: 400;
-}
-.join-us .media_title{
-	padding-top: 1em;
-}
-.join-us .media_title::after {
-	left: 26em; 
-	top: 1.5em;
-}
-.join-us .media_title::before {
-	left: 13em; 
-	top: 1.5em;
-}
 
 /* Open postitions section */
 .open-pos h2{
