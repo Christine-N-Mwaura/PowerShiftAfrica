@@ -853,6 +853,7 @@ cursor: pointer;
 *********************************/
 .section1{
 	background-color: #f1eeee;
+	position: relative;
 }
 .section1 .fas{
 	padding-top: 1em;
@@ -866,7 +867,7 @@ cursor: pointer;
 	padding-bottom: 3em;
 }
 .section2 .container{
-	margin-left: 10em;
+	margin-left: 24%;
 }
 .section2 .col-6 {
     -ms-flex: 0 0 50%;
@@ -906,6 +907,6 @@ cursor: pointer;
     width: 14em;
     height: 15em;
     position: absolute;
-    top: 0.5em;
+    top: 0.8em;
     z-index: 1;
 }

@@ -1185,9 +1185,16 @@ font-size: 11px;
 .join_us .container{
   display: flex;
   flex-direction: row;
+  align-self: center;
   align-items: center;
-  margin-left: 20%;
+  margin-left: 21%;
 }
+.join_us p{
+  font-size: 22px;
+  line-height: 1.6em;
+
+}
+
 .joinUs_button{
   margin-top: 50px;
   background-color:#663f17;
