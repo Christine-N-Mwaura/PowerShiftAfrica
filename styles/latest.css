@@ -512,20 +512,29 @@ section
 /*********************************
 6. News
 *********************************/
-/* List icons */
+/* Events section */
 
-.list_icons {
- display: flex;
- justify-content: end;
- margin-left: 6em;
- margin-bottom: 2em;
+.events .top-content, .press .top-content{
+	display: flex;
+	flex-direction: row;
+	color:rgb(41, 39, 39) ;
 }
-.list_icons .fa-th-large{
-	color: #4dae47;
-	padding-right: 1em;
+.top-content h2{
+	margin-left: 1.2em;
+	font-size: 32px;
+	font-weight: 500;
+	padding-bottom: 0.8em;
 }
-.list_icons .fa-th-list{
-	padding-right: 1.3em;
+.events .top-content p ,.press .top-content p{
+	margin-left: 58em;
+	color:rgb(41, 39, 39);
+	font-size: 16px;
+	font-weight: 600;
+	
+}
+
+.news{
+	background-color: #E0F2DF;
 }
 
 
